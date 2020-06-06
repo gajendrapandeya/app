@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="OnLineTestModel"
+            type="com.copy.lms.model.OnLineTestModel" />
+    </data>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:id="@+id/llMain"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/app_bg"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtScore"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="@dimen/_10sdp"
+                    android:textSize="@dimen/_16sdp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:background="@drawable/btn_bg"
+                    android:gravity="center"
+                    android:padding="@dimen/_6sdp">
+
+                    <TextView
+                        android:id="@+id/txtQuestion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="@dimen/_10sdp"
+                        android:textSize="@dimen/_16sdp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:gravity="center">
+
+                    <RadioGroup
+                        android:id="@+id/radioGropup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:id="@+id/txtOne"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:buttonTint="@color/white"
+                            android:gravity="right"
+                            android:text="ફ્રાન્સ "
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_14sdp" />
+
+                        <RadioButton
+                            android:id="@+id/txtTwo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_marginTop="@dimen/_12sdp"
+                            android:buttonTint="@color/white"
+
+                            android:gravity="right"
+                            android:text="ઇંગ્લેન્ડ  "
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_14sdp" />
+
+                        <RadioButton
+                            android:id="@+id/txtThree"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_marginTop="@dimen/_12sdp"
+                            android:buttonTint="@color/white"
+
+                            android:gravity="right"
+                            android:text="જર્મની  "
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_14sdp" />
+
+                        <RadioButton
+                            android:id="@+id/txtFour"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_marginTop="@dimen/_12sdp"
+                            android:buttonTint="@color/white"
+                            android:gravity="right"
+                            android:text="ગ્રીસ  "
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_14sdp" />
+                    </RadioGroup>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_marginRight="@dimen/_20sdp"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/_30sdp"
+                    android:paddingRight="@dimen/_30sdp">
+
+
+                    <TextView
+                        android:id="@+id/btnNext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btn_bg"
+                        android:gravity="center"
+                        android:padding="@dimen/_10sdp"
+                        android:text="Next"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_16sdp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="MessageListModel"
+            type="com.copy.lms.model.MessageListModel" />
+
+    </data>
+
+    <RelativeLayout
+        android:id="@+id/rootChatLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f0eff5"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/linButtonContainer"
+            android:layout_below="@+id/mainToolbar"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:paddingBottom="4dp" />
+
+        <TextView
+            android:id="@+id/txtTimeBubble"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mainToolbar"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="4dp"
+            android:background="@color/actionbar"
+            android:gravity="center"
+            android:padding="4dp"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/mainToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/normal_bg"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"
+            app:popupTheme="@style/ActionBarPopupThemeOverlay"
+            app:theme="@style/ActionBarThemeOverlay">
+
+            <LinearLayout
+                android:id="@+id/userContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/_4sdp">
+
+                <ImageView
+                    android:id="@+id/imgBack"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/_4sdp"
+                    android:onClick="backClicked"
+                    android:padding="@dimen/_8sdp"
+                    android:src="@drawable/ic_back" />
+
+
+                <FrameLayout
+                    android:id="@+id/imgLayout"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_toRightOf="@+id/imgBack"
+                    android:padding="4dp">
+
+                    <ImageView
+                        android:id="@+id/imgRoom"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/draw_contact" />
+
+                    <TextView
+                        android:id="@+id/txtRoomLable"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_20sdp"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+
+                </FrameLayout>
+
+
+                <TextView
+                    android:id="@+id/txtRoomName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/_4sdp"
+                    android:layout_toRightOf="@+id/imgLayout"
+                    android:maxLines="1"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/_4sdp"
+                    android:text="Denial Josef"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_16sdp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtRoomCreated"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtRoomName"
+                    android:layout_marginLeft="@dimen/_4sdp"
+                    android:layout_toRightOf="@+id/imgLayout"
+                    android:maxLines="1"
+                    android:padding="@dimen/_4sdp"
+                    android:singleLine="true"
+                    android:text="online"
+                    android:visibility="gone"
+                    android:textColor="@color/hintColor"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+
+        <LinearLayout
+            android:id="@+id/linButtonContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white"
+            android:gravity="bottom"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/hintColor" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:background="@color/buttonLeft"
+                android:gravity="bottom"
+                android:orientation="horizontal"
+                android:padding="@dimen/_4sdp">
+
+                <ImageView
+                    android:id="@+id/imgAttachment"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginLeft="@dimen/_4sdp"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_4sdp"
+                    android:src="@drawable/ic_attach"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/etChatMessage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edittextborder"
+                    android:drawablePadding="0dp"
+                    android:hint="Message"
+                    android:inputType="textAutoCorrect|textCapSentences|textMultiLine"
+                    android:maxLines="3"
+                    android:minHeight="36dp"
+                    android:minLines="1"
+                    android:padding="@dimen/_4sdp"
+                    android:textColor="@color/txtColor"
+                    android:textColorHint="@color/hintColor"
+                    android:textCursorDrawable="@null"
+                    android:textSize="14dp"
+                    android:textStyle="normal" />
+
+
+                <LinearLayout
+                    android:id="@+id/txtSend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@color/buttonRight"
+                    android:gravity="center"
+                    android:padding="@dimen/_6sdp">
+
+                    <ImageView
+                        android:id="@+id/imgSendMsg"
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:gravity="center"
+                        android:padding="@dimen/_4sdp"
+                        android:src="@drawable/ic_send" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imgScrollToBtm"
+            android:layout_width="48dp"
+            android:layout_height="36dp"
+            android:layout_alignBottom="@+id/recyclerView"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="24dp"
+            android:src="@drawable/app_bg"
+            android:visibility="gone" />
+    </RelativeLayout>
+</layout>

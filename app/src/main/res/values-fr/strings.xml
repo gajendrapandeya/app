@@ -1,0 +1,188 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <string name="app_name">Neon Lms</string>
+
+    <!--facebook app id change hear-->
+    <string name="facebook_app_id">your facebook app id</string>
+    <string name="fb_login_protocol_scheme">your facebook login protocol</string>
+
+    <string name="loginHear">salut! Connectez-vous ici</string>
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Mot de passe</string>
+    <string name="remember">Souviens-toi de moi</string>
+    <string name="forgot_password">Mot de passe oublié</string>
+    <string name="sign_in">Se connecter</string>
+    <string name="noAccount">Vous n\'avez pas de compte?</string>
+    <string name="signUp"><u>S\'inscrire</u></string>
+    <string name="loginwith">Connectez-vous avec</string>
+    <string name="homepagetext">Solution inventive pour l\'éducation</string>
+
+    <string name="dummyText">Lorem Ipsum est simplement un texte factice de l\'industrie de l\'impression et de la composition.</string>
+    <string name="largedummyText">Lorem Ipsum est simplement un texte factice de l\'industrie de l\'impression et de la composition. Lorem Ipsum est le texte factice standard de l’industrie depuis les années 1500, quand un imprimeur inconnu a pris une galère de type et l’a brouillé pour en faire un cahier type.</string>
+    <!--Login text-->
+    <string name="quit">Êtes-vous sûr de quitter?</string>
+    <string name="yes">Oui</string>
+    <string name="no">Non</string>
+    <string name="ok">D\'accord</string>
+    <string name="noDataFound">Aucune donnée disponible</string>
+    <string name="enterpassword">Veuillez entrer le mot de passe</string>
+    <string name="validemail">Veuillez entrer un email valide</string>
+    <string name="enteremail">S\'il vous plaît entrer email</string>
+    <string name="enterCity">Veuillez entrer la ville</string>
+
+    <string name="enter_username_mobiel_email_msg">S\'il vous plaît entrer email</string>
+    <string name="empty_msg">% 1 $ s ne peut pas être vide.Veuillez entrer votre% 2 $ s.</string>
+    <string name="invalid_email">Email invalide.Veuillez entrer un email valide</string>
+    <string name="invalid_mobile">Numéro de téléphone invalide. Veuillez entrer un numéro de téléphone valide.</string>
+    <string name="invalid_password">Mot de passe invalide. La longueur du mot de passe doit être 6 ou supérieure à% 1 $ d</string>
+    <string name="navigation_drawer_open">Ouvrir le tiroir de navigation</string>
+    <string name="navigation_drawer_close">Fermer le tiroir de navigation</string>
+    <!--Drawr Text-->
+    <string name="home">Accueil</string>
+    <string name="blog">Blog</string>
+    <string name="course">Cours</string>
+    <string name="bundle">Paquet</string>
+    <string name="myPurchase">Mon achat</string>
+    <string name="forums">Les forums</string>
+    <string name="contactUs">Contact</string>
+    <string name="about">À propos de nous</string>
+    <string name="login">S\'identifier</string>
+    <string name="feedback">Retour d\'information</string>
+    <string name="certificate">Certificat</string>
+    <string name="language">La langue</string>
+    <string name="faq">Questions - réponses</string>
+    <!--Home Text-->
+    <string name="latest">Dernière</string>
+    <string name="news">Nouvelles</string>
+    <string name="trending">Tendances</string>
+    <string name="courses">Cours</string>
+    <string name="bundles">Liasses</string>
+    <string name="faqs">Faqs</string>
+
+    <string name="featured">En vedette</string>
+    <string name="teacher">Enseignantes</string>
+    <string name="testimonial">Témoignage</string>
+    <string name="question">Question</string>
+    <string name="our">Notre</string>
+    <string name="asked">A demandé</string>
+    <string name="browse">Feuilleter</string>
+    <string name="why">Pourquoi</string>
+    <string name="contect">Contact</string>
+    <string name="us">Nous</string>
+    <string name="sponser">Sponsors</string>
+    <string name="searchtext">Tapez ce que vous voulez apprendre aujourd\'hui?</string>
+    <string name="sortby">Trier par</string>
+    <!--Faq -->
+    <string name="findyour">Trouver votre</string>
+    <string name="queans">questions et réponses</string>
+    <!--Teacher-->
+    <string name="viewDetail">Voir les détails</string>
+    <string name="teachers">Professeure</string>
+    <string name="aboutTeacher">À propos</string>
+    <string name="specialist">Spécialiste</string>
+    <!--Blog-->
+    <string name="previousPost">Post précédent</string>
+    <string name="nextPost">Prochain Post</string>
+    <string name="coursetimeline">Chronologie du cours: </string>
+    <string name="lessiontimeline">Lession Timeline : </string>
+
+    <!--shop and cart-->
+    <string name="addtocart">Ajouter au chariot</string>
+    <string name="addedtocart">Ajouté au panier</string>
+    <string name="shop">Magasin</string>
+    <string name="cart">Chariot</string>
+    <!--Message-->
+    <string name="message">Message</string>
+    <string name="searchUser">Rechercher un utilisateur</string>
+    <string name="invoice">Facture d\'achat</string>
+    <string name="all">TOUTE</string>
+    <string name="ourstanding">EXCEPTIONNELLE</string>
+    <string name="paid">PAYÉ</string>
+    <!--Account-->
+    <string name="myaccount">Mon compte</string>
+    <string name="myorder">MES COMMANDES</string>
+    <string name="mydetail">Mon détail</string>
+    <string name="mywishlist">MA LISTE D\'ENVIES</string>
+    <string name="price">Prix</string>
+    <string name="qty">Qté</string>
+    <string name="saveandcont">Enregistrer continuer</string>
+    <!--checkout-->
+    <string name="checkout">Check-out</string>
+    <string name="confirmOrder">Confirmer la commande</string>
+    <string name="address">Adresse</string>
+    <string name="shiping">livraison</string>
+    <string name="payment">Paiement</string>
+    <string name="search_no_internet_connection">Pas de connexion Internet</string>
+    <string name="somthingwrong">Quelque chose ne va pas s\'il vous plaît essayez à nouveau</string>
+    <string name="checkEmail">S\'il vous plaît vérifier votre email pour réinitialiser le mot de passe</string>
+    <string name="signcancel">Se connecter annuler</string>
+    <string-array name="courseSort">
+        <item>Aucune</item>
+        <item>Populaire</item>
+        <item>Tendances</item>
+        <item>En vedette</item>
+    </string-array>
+    <!--Forgot text-->
+    <string name="resetMyPass">Mot de passe oublié</string>
+    <string name="forgot">Lorem Ipsum est simplement un texte factice de l\'industrie de l\'impression et de la composition.</string>
+    <string name="username">Nom d\'utilisateur</string>
+    <string name="mobiles">Mobile</string>
+    <string name="email">Email</string>
+    <string name="resetPass">réinitialiser le mot de passe</string>
+    <string name="subscribe">Abonnez-vous pour les dernières mises à jour</string>
+    <string name="subscribeNow">Abonnez-vous maintenant</string>
+    <string name="subscribeNote">Inscrivez-vous à notre newsletter et recevez des notifications lorsque nous publions de nouveaux articles gratuitement!</string>
+    <string name="sendMsg">Envoie-nous un message.</string>
+    <string name="yourname">votre nom</string>
+    <string name="youremail">Votre email</string>
+    <string name="yourphone">Ton téléphone</string>
+    <string name="yourmsg">Message</string>
+    <string name="submit">Soumettre</string>
+    <string name="addComment">S\'il vous plaît entrer votre commentaire</string>
+    <string name="addEmail">S\'il vous plaît entrer email</string>
+    <string name="addName">S\'il vous plaît entrer le nom</string>
+    <string name="addPhone">Veuillez entrer le numéro</string>
+    <string name="offer">Offre</string>
+    <string name="coupenuse">Utilisation: par utilisateur</string>
+    <string name="minAmount">Montant minimum de la commande</string>
+    <string name="enterFname">S\'il vous plaît entrez votre prénom</string>
+    <string name="enterLname">S\'il vous plaît entrer le nom</string>
+    <string name="enterNumber">S\'il vous plaît entrer le dernier numéro de téléphone</string>
+    <string name="signUpSuccess">Inscription réussie. S\'il vous plait Connectez-vous d\'abord</string>
+    <string name="updateData">Mise à jour réussie.</string>
+
+    <string name="logout">Se déconnecter</string>
+    <string name="addForum">Nouvelle discussion</string>
+    <string name="add">Ajouter</string>
+    <string name="title">Titre</string>
+    <string name="discussion">Ajouter une nouvelle discussion</string>
+    <string name="enterTitle">Veuillez entrer le titre</string>
+    <string name="enterDiscussion">S\'il vous plaît entrer dans la discussion</string>
+    <string name="addSuccessFul">Discussion ajoutée</string>
+    <string name="deletSuccessFul">Discussion Delete Successful</string>
+    <string name="detail">detail</string>
+    <string name="count">count</string>
+    <string name="name">name</string>
+    <string name="id">id</string>
+    <string name="sub_total">Total partiel</string>
+    <string name="shipping">livraison</string>
+    <string name="totalAmount">Totale</string>
+    <string name="Tax">Impôt</string>
+    <string name="enterPromo">Saisir le code promotionnel</string>
+    <string name="promoMessage">S\'il vous plaît entrer le code promo</string>
+    <string name="promo_code_que">Code promo</string>
+    <string name="validCoupon">Veuillez entrer un coupon valide</string>
+    <string name="apply">Appliquer</string>
+    <string name="profile">Profil</string>
+    <string name="offlinepayment">Paiement hors ligne</string>
+    <string name="selectpaymant">Sélectionnez le mode de paiement</string>
+    <string name="pleaseByeCourse">S\'il vous plaît acheter un cours</string>
+    <string name="orderDone">Commande effectuée</string>
+
+    <string name="English">English</string>
+    <string name="spanish">Spanish</string>
+    <string name="french">French</string>
+    <string name="arabic">Arabic</string>
+
+    <string name="download">Télécharger</string>
+
+</resources>

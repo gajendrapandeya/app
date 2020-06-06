@@ -1,0 +1,214 @@
+
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <string name="app_name">Neon Lms</string>
+
+    <!--facebook app id change hear-->
+    <string name="facebook_app_id">your facebook app id</string>
+    <string name="fb_login_protocol_scheme">your facebook login protocol</string>
+
+    <string name="loginHear">ممرحبا! تسجيل الدخول هنا</string>
+    <string name="email_hint">البريد الإلكتروني</string>
+    <string name="password_hint">كلمه السر</string>
+    <string name="remember">تذكرنى</string>
+    <string name="forgot_password">هل نسيت كلمة المرور</string>
+    <string name="sign_in">تسجيل الدخول</string>
+    <string name="noAccount">ليس لديك حساب؟</string>
+    <string name="signUp"><u>سجل</u></string>
+    <string name="homepagetext">حل مبتكر للتعليم</string>
+    <string name="loginwith">تسجيل الدخول مع</string>
+    <string name="dummyText">أبجد هوز هو مجرد دمية النص لصناعة الطباعة والتنضيد.</string>
+    <string name="largedummyText">أبجد هوز هو مجرد دمية النص لصناعة الطباعة والتنضيد. لقد كان Lorem Ipsum هو النص الوهمي القياسي الخاص بالصناعة منذ القرن الخامس عشر الميلادي ، عندما أخذت طابعة غير معروفة لوحًا من الورق وتدافعت عليه لصنع كتاب عينات من الأنواع.</string>
+
+    <!--Login text-->
+    <string name="quit">هل أنت متأكد من الإقلاع عن التدخين؟</string>
+    <string name="yes">نعم</string>
+    <string name="no">لا</string>
+    <string name="ok">حسنا</string>
+    <string name="noDataFound">لاتوجد بيانات</string>
+    <string name="enterpassword">من فضلك أدخل كلمة المرور</string>
+    <string name="validemail">الرجاء إدخال بريد إلكتروني صحيح</string>
+    <string name="enteremail">الرجاء إدخال البريد الإلكتروني</string>
+    <string name="enterCity">من فضلك ادخل المدينة</string>
+
+    <string name="enter_username_mobiel_email_msg">الرجاء إدخال البريد الإلكتروني</string>
+    <string name="empty_msg">لا يمكن أن يكون٪ 1 $ s فارغًا. الرجاء إدخال٪ 2 $ s.</string>
+    <string name="invalid_email">بريد إلكتروني غير صالح. يرجى إدخال بريد إلكتروني صالح</string>
+    <string name="invalid_mobile">رقم هاتف غير صالح. يرجى إدخال رقم هاتف صالح.</string>
+    <string name="invalid_password">كلمة المرور غير صالحة. يجب أن يكون طول كلمة المرور 6 أو أكبر من٪ 1 $ d</string>
+
+    <string name="navigation_drawer_open">فتح درج التنقل</string>
+    <string name="navigation_drawer_close">أغلق درج التنقل</string>
+    <!--Drawr Text-->
+    <string name="home">الصفحة الرئيسية</string>
+    <string name="blog">مدونة</string>
+    <string name="course">دورة</string>
+    <string name="bundle">حزمة</string>
+    <string name="myPurchase">شراء بلدي</string>
+    <string name="forums">المنتديات</string>
+    <string name="contactUs">اتصل</string>
+    <string name="about">معلومات عنا</string>
+    <string name="login">تسجيل الدخول</string>
+    <string name="feedback">ردود الفعل</string>
+    <string name="certificate">شهادة</string>
+    <string name="language">لغة</string>
+    <string name="faq">التعليمات</string>
+
+    <!--Home Text-->
+    <string name="latest">آخر</string>
+    <string name="news">أخبار</string>
+    <string name="trending">الشائع</string>
+    <string name="courses">الدورات</string>
+    <string name="bundles">حزم</string>
+    <string name="faqs">الأسئلة الشائعة</string>
+    <string name="featured">متميز</string>
+    <string name="teacher">معلمون</string>
+    <string name="testimonial">شهادة</string>
+    <string name="question">سؤال</string>
+    <string name="our">لنا</string>
+    <string name="asked">طلبت</string>
+    <string name="browse">تصفح</string>
+    <string name="why">لماذا ا</string>
+    <string name="contect">اتصل</string>
+    <string name="us">لنا</string>
+    <string name="sponser">الرعاة</string>
+    <string name="searchtext">اكتب ماذا تريد أن تتعلم اليوم؟</string>
+    <string name="sortby">صنف حسب</string>
+
+
+    <!--Faq -->
+    <string name="findyour">تجد الخاص بك</string>
+    <string name="queans">أسئلة و أجوبة</string>
+
+    <!--Teacher-->
+    <string name="viewDetail">عرض التفاصيل</string>
+    <string name="teachers">مدرس</string>
+    <string name="aboutTeacher">حول</string>
+    <string name="specialist">متخصص</string>
+
+
+    <!--Blog-->
+    <string name="previousPost">المنشور السابق</string>
+    <string name="nextPost">القادم بوست</string>
+    <string name="coursetimeline">الجدول الزمني للدورة: </string>
+    <string name="lessiontimeline">Lession Timeline : </string>
+
+
+    <!--shop and cart-->
+    <string name="addtocart">أضف إلى السلة</string>
+    <string name="addedtocart">يضاف إلى العربة</string>
+    <string name="shop">متجر</string>
+    <string name="cart">عربة التسوق</string>
+
+    <!--Message-->
+    <string name="message">رسالة</string>
+    <string name="searchUser">بحث المستخدم</string>
+    <string name="invoice">فاتورة</string>
+    <string name="all">الكل</string>
+    <string name="ourstanding">أمتياز</string>
+    <string name="paid">دفع</string>
+
+    <!--Account-->
+    <string name="myaccount">حسابي</string>
+    <string name="myorder">طلباتي</string>
+    <string name="mydetail">تفاصيلي</string>
+    <string name="mywishlist">قائمة امنياتي</string>
+    <string name="price">السعر</string>
+    <string name="qty">الكمية</string>
+    <string name="saveandcont">حفظ ومتابعة</string>
+
+    <!--checkout-->
+
+    <string name="checkout">الدفع</string>
+    <string name="confirmOrder">أكد الطلب</string>
+    <string name="address">عنوان</string>
+    <string name="shiping">الشحن</string>
+    <string name="payment">دفع</string>
+
+
+
+    <string name="search_no_internet_connection">لا يوجد اتصال إنترنت</string>
+    <string name="somthingwrong">شيء خاطئ يرجى المحاولة مرة أخرى</string>
+    <string name="checkEmail">يرجى التحقق من بريدك الإلكتروني لإعادة تعيين كلمة المرور</string>
+    <string name="signcancel">تسجيل الدخول إلغاء</string>
+
+    <string-array name="courseSort">
+        <item>لا شيء</item>
+        <item>جمع</item>
+        <item>الشائع</item>
+        <item>متميز</item>
+    </string-array>
+
+
+    <!--Forgot text-->
+    <string name="resetMyPass">هل نسيت كلمة المرور</string>
+    <string name="forgot">أبجد هوز هو مجرد دمية النص لصناعة الطباعة والتنضيد.</string>
+    <string name="username">اسم المستخدم</string>
+    <string name="mobiles">التليفون المحمول</string>
+    <string name="email">البريد الإلكتروني</string>
+    <string name="resetPass">إعادة تعيين كلمة المرور</string>
+    <string name="subscribe">اشترك للحصول على آخر التحديثات</string>
+    <string name="subscribeNow">إشترك الآن</string>
+    <string name="subscribeNote">الاشتراك في النشرة الإخبارية لدينا والحصول على إخطار عندما ننشر مقالات جديدة مجانا!</string>
+
+    <string name="sendMsg">أرسل لنا رسالة.</string>
+    <string name="yourname">اسمك</string>
+    <string name="youremail">بريدك الالكتروني</string>
+    <string name="yourphone">هاتفك</string>
+    <string name="yourmsg">رسالة</string>
+    <string name="submit">تقديم</string>
+
+
+    <string name="addComment">الرجاء إدخال تعليقك</string>
+    <string name="addEmail">الرجاء إدخال البريد الإلكتروني</string>
+    <string name="addName">من فضلك ادخل الاسم</string>
+    <string name="addPhone">الرجاء إدخال الرقم</string>
+
+    <string name="offer">عرض</string>
+    <string name="coupenuse">الاستخدام: لكل مستخدم</string>
+    <string name="minAmount">الحد الأدنى للطلب</string>
+    <string name="enterFname">الرجاء إدخال الاسم الأول</string>
+    <string name="enterLname">الرجاء إدخال اسم العائلة</string>
+    <string name="enterNumber">الرجاء إدخال رقم الهاتف الأخير</string>
+    <string name="signUpSuccess">تسجيل الدخول نجاح. الرجاء تسجيل الدخول أولا</string>
+    <string name="updateData">تحديث نجاح.</string>
+
+    <string name="logout">تسجيل خروج</string>
+    <string name="addForum">مناقشة جديدة</string>
+    <string name="add">إضافة</string>
+    <string name="title">عنوان</string>
+    <string name="discussion">إضافة مناقشة جديدة</string>
+    <string name="enterTitle">الرجاء إدخال العنوان</string>
+    <string name="enterDiscussion">الرجاء إدخال المناقشة</string>
+    <string name="addSuccessFul">تمت إضافة المناقشة</string>
+    <string name="deletSuccessFul">تم حذف المناقشة بنجاح</string>
+
+    <string name="detail">detail</string>
+    <string name="count">count</string>
+    <string name="name">name</string>
+    <string name="id">id</string>
+
+    <string name="sub_total">المجموع الفرعي</string>
+    <string name="shipping">الشحن</string>
+    <string name="totalAmount">مجموع</string>
+    <string name="Tax">ضريبة</string>
+    <string name="enterPromo">إدخال الرمز الترويجي</string>
+    <string name="promoMessage">الرجاء إدخال الرمز الترويجي</string>
+    <string name="promo_code_que">رمز ترويجي</string>
+    <string name="validCoupon">يرجى إدخال قسيمة صالحة</string>
+    <string name="apply">تطبيق</string>
+    <string name="profile">الملف الشخصي</string>
+    <string name="offlinepayment">غير متصل الدفع</string>
+    <string name="selectpaymant">اختار طريقة الدفع</string>
+    <string name="pleaseByeCourse">يرجى شراء بالطبع</string>
+    <string name="orderDone">تم الطلب</string>
+
+    <string name="English">English</string>
+    <string name="spanish">Spanish</string>
+    <string name="french">French</string>
+    <string name="arabic">Arabic</string>
+
+    <string name="download">تحميل</string>
+
+
+</resources>

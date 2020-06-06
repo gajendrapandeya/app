@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="Drawer"
+            type="com.copy.lms.model.Drawer" />
+    </data>
+
+    <LinearLayout
+        android:id="@+id/linMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:alpha="0.8"
+                android:padding="@dimen/_8sdp"
+                android:text="dfdsfdsf"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14sdp"
+                android:visibility="gone" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:layout_marginRight="@dimen/_8sdp"
+            android:layout_marginBottom="@dimen/_8sdp"
+            android:alpha="0.6"
+            android:background="@color/white" />
+
+
+    </LinearLayout>
+
+</layout>

@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="LessionListModel"
+            type="com.copy.lms.model.LessionListModel" />
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/app_bg"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/included"
+            layout="@layout/activity_toolbar_layout" />
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:focusableInTouchMode="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_6sdp"
+                        android:gravity="right"
+                        android:padding="@dimen/_4sdp"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_14sdp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/txtDes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_4sdp"
+                        android:layout_marginRight="@dimen/_4sdp"
+                        android:gravity="right"
+                        android:padding="@dimen/_4sdp"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_14sdp"
+                        android:textStyle="normal" />
+
+                    <FrameLayout
+                        android:id="@+id/main_media_frame"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_160sdp"
+                        android:visibility="gone"
+                        android:background="#000000">
+
+                        <com.google.android.exoplayer2.ui.SimpleExoPlayerView
+                            android:id="@+id/exoplayer"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center" />
+
+                    </FrameLayout>
+
+
+                    <com.google.android.youtube.player.YouTubePlayerView
+                        android:id="@+id/youtubeView"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_160sdp"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:id="@+id/llWeb"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/textName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="right"
+                                android:padding="@dimen/_6sdp"
+                                android:text="Testt"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_18sdp" />
+
+                            <TextView
+                                android:id="@+id/txtView"
+                                android:layout_width="@dimen/_50sdp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@drawable/btn_bg"
+                                android:gravity="center"
+                                android:padding="@dimen/_6sdp"
+                                android:text="View"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:textColor="@color/white" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/txtdate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/_6sdp"
+
+                            android:textColor="@color/white" />
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/llAudio"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/txtAudioName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="@dimen/_6sdp"
+                                android:text="Testt"
+                                android:gravity="right"
+                                android:layout_weight="1"
+                                android:textSize="@dimen/_18sdp"
+                                android:textColor="@color/white" />
+
+                            <TextView
+                                android:id="@+id/txtAudioPlay"
+                                android:layout_width="@dimen/_50sdp"
+                                android:layout_height="wrap_content"
+                                android:padding="@dimen/_6sdp"
+                                android:text="Play"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:background="@drawable/btn_bg"
+                                android:textColor="@color/white" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/txtAudioDate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/_6sdp"
+                            android:textColor="@color/white" />
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:focusable="false"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/_6sdp"
+                            android:gravity="right"
+                            android:padding="@dimen/_4sdp"
+                            android:text="@string/coursetimeline"
+                            android:textColor="@color/txtColorsky"
+                            android:textSize="@dimen/_14sdp"
+                            android:textStyle="bold" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recyclerView"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:nestedScrollingEnabled="false" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </FrameLayout>
+        </androidx.core.widget.NestedScrollView>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+    </LinearLayout>
+</layout>

@@ -1,0 +1,189 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <string name="app_name">Neon Lms</string>
+
+
+    <!--facebook app id change hear-->
+    <string name="facebook_app_id">your facebook app id</string>
+    <string name="fb_login_protocol_scheme">your facebook login protocol</string>
+
+    <string name="loginHear">¡Hola! Entre aquí</string>
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Contraseña</string>
+    <string name="remember">Recuérdame</string>
+    <string name="forgot_password">Se te olvidó tu contraseña</string>
+    <string name="sign_in">Registrarse</string>
+    <string name="noAccount">¿No tienes cuenta? </string>
+    <string name="signUp"><u>Regístrate</u></string>
+    <string name="loginwith">Inicia con</string>
+    <string name="homepagetext">Solución inventiva para la educación</string>
+    <string name="dummyText">Lorem Ipsum es simplemente un texto ficticio de la industria de impresión y composición tipográfica.</string>
+    <string name="largedummyText">Lorem Ipsum es simplemente un texto ficticio de la industria de impresión y composición tipográfica. Lorem Ipsum ha sido el texto ficticio estándar de la industria desde el año 1500, cuando una impresora desconocida tomó una galera de tipo y la mezcló para hacer un libro de muestras.</string>
+    <!--Login text-->
+    <string name="quit">¿Está seguro de dejar de fumar?</string>
+    <string name="yes">si</string>
+    <string name="no">No</string>
+    <string name="ok">Okay</string>
+    <string name="noDataFound">Datos no encontrados</string>
+    <string name="enterpassword">Por favor, ingrese contraseña</string>
+    <string name="validemail">Por favor introduzca un correo electrónico válido</string>
+    <string name="enteremail">Por favor ingrese su correo electrónico</string>
+
+    <string name="enterCity">Por favor, introduzca la ciudad</string>
+
+    <string name="enter_username_mobiel_email_msg">Por favor ingrese su correo electrónico</string>
+    <string name="empty_msg">% 1 $ s no puede estar vacío. Ingrese sus% 2 $ s.</string>
+    <string name="invalid_email">Correo electrónico no válido. Ingrese un correo electrónico válido</string>
+    <string name="invalid_mobile">Número de teléfono no válido. Ingrese un número de teléfono válido.</string>
+    <string name="invalid_password">Contraseña no válida. La longitud de la contraseña debe ser 6 o mayor que% 1 $ d</string>
+    <string name="navigation_drawer_open">Abrir el cajón de navegación</string>
+    <string name="navigation_drawer_close">Cerrar el cajón de navegación</string>
+    <!--Drawr Text-->
+    <string name="home">Casa</string>
+    <string name="blog">Blog</string>
+    <string name="course">Curso</string>
+    <string name="bundle">Haz</string>
+    <string name="bundles">manojos</string>
+    <string name="faqs">Faqs</string>
+
+    <string name="myPurchase">Mi compra</string>
+    <string name="forums">El</string>
+    <string name="contactUs">Contacto</string>
+    <string name="about">Sobre nosotros</string>
+    <string name="login">Iniciar sesión</string>
+    <string name="feedback">Realimentación</string>
+    <string name="certificate">Certificado</string>
+    <string name="language">Idioma</string>
+    <string name="faq">Preguntas más frecuentes</string>
+    <!--Home Text-->
+    <string name="latest">Última</string>
+    <string name="news">Noticias</string>
+    <string name="trending">Tendencias</string>
+    <string name="courses">Cursos</string>
+    <string name="featured">Destacadas</string>
+    <string name="teacher">Profesoras</string>
+    <string name="testimonial">Testimonial</string>
+    <string name="question">Pregunta</string>
+    <string name="our">Nuestra</string>
+    <string name="asked">Preguntó</string>
+    <string name="browse">Vistazo</string>
+    <string name="why">Por qué</string>
+    <string name="contect">Contacto</string>
+    <string name="us">Nosotros</string>
+    <string name="sponser">Patrocinadoras</string>
+    <string name="searchtext">Escriba lo que quiere aprender hoy?</string>
+    <string name="sortby">Ordenar por</string>
+    <!--Faq -->
+    <string name="findyour">Encuentra tu</string>
+    <string name="queans">preguntas y respuestas</string>
+    <!--Teacher-->
+    <string name="viewDetail">Ver Detalle</string>
+    <string name="teachers">Profesora</string>
+    <string name="aboutTeacher">Acerca de</string>
+    <string name="specialist">Especialista</string>
+    <!--Blog-->
+    <string name="previousPost">Publicación anterior</string>
+    <string name="nextPost">Siguiente publicación</string>
+    <string name="coursetimeline">Cronología del curso: </string>
+    <string name="lessiontimeline">Lession Timeline : </string>
+
+    <!--shop and cart-->
+    <string name="addtocart">Añadir al carrito</string>
+    <string name="addedtocart">Agregado al carrito</string>
+    <string name="shop">tienda</string>
+    <string name="cart">Carro</string>
+    <!--Message-->
+    <string name="message">Mensaje</string>
+    <string name="searchUser">Buscar usuario</string>
+    <string name="invoice">Factura</string>
+    <string name="all">TODAS</string>
+    <string name="ourstanding">EXCEPCIONAL</string>
+    <string name="paid">PAGADA</string>
+    <!--Account-->
+    <string name="myaccount">Mi cuenta</string>
+    <string name="myorder">MIS ORDENES</string>
+    <string name="mydetail">MI DETALLE</string>
+    <string name="mywishlist">MI LISTA DE DESEOS</string>
+    <string name="price">Precio</string>
+    <string name="qty">Cantidad</string>
+    <string name="saveandcont">Guardar Continuar</string>
+    <!--checkout-->
+    <string name="checkout">Revisa</string>
+    <string name="confirmOrder">Confirmar pedido</string>
+    <string name="address">Habla a</string>
+    <string name="shiping">Envío</string>
+    <string name="payment">Pago</string>
+    <string name="search_no_internet_connection">Sin conexión a Internet</string>
+    <string name="somthingwrong">Algo mal, por favor intente de nuevo</string>
+    <string name="checkEmail">Por favor revise su correo electrónico para restablecer la contraseña</string>
+    <string name="signcancel">Iniciar sesión cancelar</string>
+    <string-array name="courseSort">
+        <item>Ninguna</item>
+        <item>Popular</item>
+        <item>Tendencias</item>
+        <item>Destacadas</item>
+    </string-array>
+    <!--Forgot text-->
+    <string name="resetMyPass">Se te olvidó tu contraseña</string>
+    <string name="forgot">Lorem Ipsum es simplemente un texto ficticio de la industria de impresión y composición tipográfica.</string>
+    <string name="username">Nombre de usuario</string>
+    <string name="mobiles">Móvil</string>
+    <string name="email">Email</string>
+    <string name="resetPass">Restablecer la contraseña</string>
+    <string name="subscribe">Suscríbase para las últimas actualizaciones</string>
+    <string name="subscribeNow">Suscríbase ahora</string>
+    <string name="subscribeNote">¡Suscríbase a nuestro boletín y reciba notificaciones cuando publiquemos nuevos artículos gratis!</string>
+    <string name="sendMsg">Mandanos un mensaje.</string>
+    <string name="yourname">Tu nombre</string>
+    <string name="youremail">Tu correo electrónico</string>
+    <string name="yourphone">Su teléfono</string>
+    <string name="yourmsg">Mensaje</string>
+    <string name="submit">Enviar</string>
+    <string name="addComment">Por favor ingrese su comentario</string>
+    <string name="addEmail">Por favor ingrese su correo electrónico</string>
+    <string name="addName">Por favor, introduzca el nombre</string>
+    <string name="addPhone">Por favor ingrese el número</string>
+    <string name="offer">Oferta</string>
+    <string name="coupenuse">Uso: por usuario</string>
+    <string name="minAmount">Cantidad mínima de pedido</string>
+    <string name="enterFname">Por favor, introduzca el nombre</string>
+    <string name="enterLname">Por favor, introduzca el apellido</string>
+    <string name="enterNumber">Por favor, introduzca el último número de teléfono</string>
+    <string name="signUpSuccess">Registrarse con éxito. Por favor ingresa primero</string>
+    <string name="updateData">Actualización exitosa.</string>
+
+    <string name="logout">Cerrar sesión</string>
+    <string name="addForum">Nueva discusión</string>
+    <string name="add">Añadir</string>
+    <string name="title">Título</string>
+    <string name="discussion">Agregar nueva discusión</string>
+    <string name="enterTitle">Por favor, introduzca el título</string>
+    <string name="enterDiscussion">Por favor, introduzca la discusión</string>
+    <string name="addSuccessFul">Discusión agregada</string>
+    <string name="deletSuccessFul">Discusión Eliminar Exitoso</string>
+    <string name="detail">detail</string>
+    <string name="count">count</string>
+    <string name="name">name</string>
+    <string name="id">id</string>
+    <string name="sub_total">Subtotal</string>
+    <string name="shipping">Envío</string>
+    <string name="totalAmount">Total</string>
+    <string name="Tax">Impuesto</string>
+    <string name="enterPromo">Introduce el código de promoción</string>
+    <string name="promoMessage">Por favor, introduzca el código de promoción</string>
+    <string name="promo_code_que">Código promocional</string>
+    <string name="validCoupon">Por favor ingrese un cupón válido</string>
+    <string name="apply">Aplicar</string>
+    <string name="profile">Perfil</string>
+    <string name="offlinepayment">Pago fuera de línea</string>
+    <string name="selectpaymant">Seleccionar forma de pago</string>
+    <string name="pleaseByeCourse">Por favor comprar curso</string>
+    <string name="orderDone">Orden hecho</string>
+
+    <string name="English">English</string>
+    <string name="spanish">Spanish</string>
+    <string name="french">French</string>
+    <string name="arabic">Arabic</string>
+
+    <string name="download">Descargar</string>
+
+</resources>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="PaymentOptionModel"
+            type="com.copy.lms.model.PaymentOptionModel" />
+    </data>
+
+    <LinearLayout
+        android:id="@+id/llMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/app_bg"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/included"
+            layout="@layout/activity_toolbar_layout" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_14sdp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="@string/totalAmount"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_16sdp" />
+
+                <TextView
+                    android:id="@+id/txtTotal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14sdp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:gravity="center">
+
+
+                <View
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="0.5dp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:background="@color/white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/selectpaymant"
+                    android:textColor="@color/white"
+
+                    android:textColorHint="@color/white"
+                    android:textSize="@dimen/_12sdp" />
+
+
+                <View
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:background="@color/white" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:id="@+id/imgStripe"
+                    android:visibility="visible"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white">
+
+                    <ImageView
+                        android:layout_width="@dimen/_160sdp"
+                        android:layout_height="@dimen/_60sdp"
+                        android:layout_margin="@dimen/_6sdp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/stripe" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/imgPaypal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@color/white">
+
+                    <ImageView
+                        android:layout_width="@dimen/_160sdp"
+                        android:layout_height="@dimen/_60sdp"
+                        android:layout_margin="@dimen/_6sdp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/paypal" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/imgOffLine"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@color/white">
+
+
+                    <ImageView
+                        android:layout_width="@dimen/_160sdp"
+                        android:layout_height="@dimen/_60sdp"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/_6sdp"
+                        android:background="@drawable/offlinepayment" />
+                </FrameLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</layout>

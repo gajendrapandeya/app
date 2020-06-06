@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <integer name="password_length">6</integer>
+
+
+    <integer name="passenger_adults">10</integer>
+
+    <integer name="passenger_child">6</integer>
+
+    <integer name="passenger_infants">3</integer>
+
+    <integer name="custom_spacing_1">1</integer>
+
+</resources>

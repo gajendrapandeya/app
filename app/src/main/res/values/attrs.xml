@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="AdvancedTextView">
+        <!-- Attributes for justified text alignment-->
+        <attr name="justifyText" format="boolean" />
+        <attr name="fontStyle" />
+        <!-- Attributes for expandable text layout-->
+        <attr name="expandable" format="boolean" />
+        <attr name="expandText" format="string" />
+        <attr name="expandTextColor" format="color" />
+        <attr name="expandTextPosition" format="enum">
+            <enum name="left" value="0" />
+            <enum name="center" value="1" />
+            <enum name="right" value="2" />
+        </attr>
+
+        <attr name="expandTextSize" format="dimension" />
+        <attr name="expandText_margin" format="dimension" />
+        <attr name="expandText_marginLeft" format="dimension" />
+        <attr name="expandText_marginRight" format="dimension" />
+        <attr name="expandText_marginTop" format="dimension" />
+        <attr name="expandText_marginBottom" format="dimension" />
+        <attr name="expandEllipsize" format="boolean" />
+
+        <!-- Attributes for auto fit-->
+        <attr name="autoFit" format="boolean" />
+        <attr name="minTextSize" format="dimension" />
+
+        <!-- Attributes for counting text-->
+        <attr name="countingText" format="boolean" />
+        <attr name="countingText_startValue" format="integer" />
+        <attr name="countingText_endValue" format="integer" />
+        <attr name="countingText_interval" format="integer" />
+        <attr name="countingText_increment" format="integer" />
+        <attr name="countingText_format" format="enum">
+            <enum name="none" value="0" />
+            <enum name="comma" value="1" />
+            <enum name="commaWithZeros" value="2" />
+            <enum name="dot" value="3" />
+            <enum name="dotWithZeros" value="4" />
+        </attr>
+    </declare-styleable>
+
+</resources>
