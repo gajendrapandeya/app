@@ -3,5 +3,7 @@
     <array name="preloaded_fonts" translatable="false">
         <item>@font/alike</item>
         <item>@font/aref_ruqaa_bold</item>
+        <item>@font/muli_black</item>
+        <item>@font/muli_light</item>
     </array>
 </resources>
