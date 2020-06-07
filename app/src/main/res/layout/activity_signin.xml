@@ -117,6 +117,7 @@
                         android:layout_weight="1"
                         android:background="@null"
                         android:hint="@string/password_hint"
+                        android:imeOptions="actionDone"
                         android:inputType="textPassword"
                         android:textColor="@color/white"
                         android:textColorHint="@color/white"
@@ -151,12 +152,12 @@
                         android:layout_gravity="right|end|center"
                         android:layout_weight="1"
                         android:backgroundTint="@color/white"
+                        android:checked="true"
                         android:gravity="left|center"
                         android:text="@string/remember"
                         android:textColor="@color/white"
-                        android:theme="@style/SampleTheme"
-                        android:checked="true"
-                        android:textColorHint="@color/white" />
+                        android:textColorHint="@color/white"
+                        android:theme="@style/SampleTheme" />
 
                     <TextView
                         android:id="@+id/forgot"
@@ -303,8 +304,6 @@
                         android:layout_height="@dimen/_38sdp"
                         android:layout_marginLeft="@dimen/_4sdp"
                         android:background="@drawable/twitter" />
-
-
 
 
                 </LinearLayout>
