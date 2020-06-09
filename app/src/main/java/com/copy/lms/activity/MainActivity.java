@@ -2,21 +2,8 @@ package com.copy.lms.activity;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
-
-import androidx.core.content.ContextCompat;
-import androidx.databinding.DataBindingUtil;
-
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
-import androidx.core.view.GravityCompat;
-import androidx.drawerlayout.widget.DrawerLayout;
-import androidx.appcompat.app.ActionBarDrawerToggle;
-import androidx.recyclerview.widget.LinearLayoutManager;
-
 import android.view.View;
 import android.webkit.CookieManager;
 import android.webkit.CookieSyncManager;
@@ -24,14 +11,16 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
 
+import androidx.appcompat.app.ActionBarDrawerToggle;
+import androidx.core.content.ContextCompat;
+import androidx.core.view.GravityCompat;
+import androidx.databinding.DataBindingUtil;
+import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
+import androidx.recyclerview.widget.LinearLayoutManager;
 
-import com.etebarian.meowbottomnavigation.MeowBottomNavigation;
-import com.facebook.login.LoginManager;
-import com.google.android.gms.auth.api.Auth;
-import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
-import com.google.android.gms.common.api.GoogleApiClient;
-import com.google.android.gms.common.api.ResultCallback;
-import com.google.android.gms.common.api.Status;
 import com.copy.lms.BaseAppClass;
 import com.copy.lms.Config;
 import com.copy.lms.R;
@@ -52,9 +41,17 @@ import com.copy.lms.util.AlertDialogAndIntents;
 import com.copy.lms.util.AppConstant;
 import com.copy.lms.util.Constants;
 import com.copy.lms.util.CustomProgressDialog;
+import com.etebarian.meowbottomnavigation.MeowBottomNavigation;
+import com.facebook.login.LoginManager;
+import com.google.android.gms.auth.api.Auth;
+import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
+import com.google.android.gms.common.api.GoogleApiClient;
+import com.google.android.gms.common.api.ResultCallback;
+import com.google.android.gms.common.api.Status;
 import com.twitter.sdk.android.core.TwitterCore;
 
 import java.util.ArrayList;
+import java.util.Objects;
 
 import kotlin.Unit;
 import kotlin.jvm.functions.Function1;
@@ -84,7 +81,12 @@ public class MainActivity extends BaseActivity implements MainActivityModel.Bott
         super.onCreate(savedInstanceState);
         isOpened = true;
 
+        makeBottomNavBar();
 
+    }
+
+    private void makeBottomNavBar() {
+        //Bottom Nav Bar
         MeowBottomNavigation bottomNavigation = findViewById(R.id.bottomNavigation);
         bottomNavigation.add(new MeowBottomNavigation.Model(1, R.drawable.ic_books));
         bottomNavigation.add(new MeowBottomNavigation.Model(2, R.drawable.ic_home));
@@ -216,10 +218,10 @@ public class MainActivity extends BaseActivity implements MainActivityModel.Bott
 
     }
 
-    private void updateUserImage() {
+    public void updateUserImage() {
         if (drawerArrayList.size() > 0) {
             drawerArrayList.set(0, new Drawer(BaseAppClass.getPreferences().getUserImage(), BaseAppClass.getPreferences().getUserName(), Constants.ACCOUNT, R.drawable.draw_contact, 0, DrawerAdapter.TYPE_HEADER, false, false));
-            binding.recyclerView.getAdapter().notifyDataSetChanged();
+            Objects.requireNonNull(binding.recyclerView.getAdapter()).notifyDataSetChanged();
         }
     }
 

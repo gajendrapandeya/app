@@ -11,22 +11,21 @@ import android.os.StrictMode;
 import android.util.Base64;
 import android.util.Log;
 
-
-import com.crashlytics.android.Crashlytics;
-import com.facebook.FacebookSdk;
 import com.copy.lms.util.AppConstant;
 import com.copy.lms.util.AppPreference;
 import com.copy.lms.util.Constants;
+import com.crashlytics.android.Crashlytics;
+import com.facebook.FacebookSdk;
 import com.twitter.sdk.android.core.DefaultLogger;
 import com.twitter.sdk.android.core.Twitter;
 import com.twitter.sdk.android.core.TwitterAuthConfig;
 import com.twitter.sdk.android.core.TwitterConfig;
 
-import io.fabric.sdk.android.Fabric;
-
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.Locale;
+
+import io.fabric.sdk.android.Fabric;
 
 
 public class BaseAppClass extends Application {
@@ -119,6 +118,8 @@ public class BaseAppClass extends Application {
             languageCode = "es";
         else if (lang == Constants.FRANCH)
             languageCode = "fr";
+//        else if(lang == Constants.NEPALI)
+//            languageCode = "ne";
 
         return languageCode;
 

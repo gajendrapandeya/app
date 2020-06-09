@@ -1,0 +1,214 @@
+<resources>
+    <string name="app_name">Neon Lms</string>
+
+    <!--facebook app id change hear-->
+    <string name="facebook_app_id">तपाईंको फेसबुक अनुप्रयोग आईडी</string>
+    <string name="fb_login_protocol_scheme">तपाईंको फेसबुक लगइन प्रोटोकल</string>
+
+    <string name="loginHear">लग - इन</string>
+    <string name="email_hint">ईमेल</string>
+    <string name="password_hint">पासवर्ड</string>
+    <string name="remember">تमलाई सम्झनुहोस्</string>
+    <string name="forgot_password">पासवर्ड भुल्नु भयो</string>
+    <string name="sign_in">साइन इन </string>
+    <string name="noAccount">खाता छैन?</string>
+    <string name="signUp"><u>साइन अप</u></string>
+    <string name="homepagetext">शिक्षाको लागि आविष्कारक समाधान</string>
+    <string name="loginwith">लगइन गर्नुहोस्</string>
+    <string name="dummyText">Lorem Ipsum केवल प्रिन्टिंग र typsetting उद्योग को डमी पाठ हो।</string>
+    <string name="largedummyText">
+Lorem Ipsum केवल प्रिन्टिंग र typsetting उद्योग को डमी पाठ हो। लोरेम इप्सम १ standard०० को समयदेखि नै उद्योग मानक डमी टेक्स्ट भएको छ, जब एक अज्ञात प्रिन्टरले प्रकारको ग्याले लिए र यसलाई प्रकारको नमूना पुस्तक बनाउनका लागि स्क्र्राम गरे।</string>
+
+
+    <!--Login text-->
+    <string name="quit">के तपाइँ निस्किनु निश्चित हुनुहुन्छ?</string>
+    <string name="yes">हो</string>
+    <string name="no">होइनا</string>
+    <string name="ok">ठिक छ</string>
+    <string name="noDataFound">कुनै डाटा भेटिएन</string>
+    <string name="enterpassword">कृपया पासवर्ड प्रविष्ट गर्नुहोस्</string>
+    <string name="validemail">कृपया मान्य ईमेल प्रविष्ट गर्नुहोस्</string>
+    <string name="enteremail">कृपया ईमेल प्रविष्ट गर्नुहोस्</string>
+    <string name="enterCity">कृपया शहर प्रविष्ट गर्नुहोस्</string>
+
+    <string name="enter_username_mobiel_email_msg">कृपया ईमेल प्रविष्ट गर्नुहोस्</string>
+    <string name="empty_msg">सन्देश खाली हुन सक्दैन। कृपया तपाईंको सन्देश प्रविष्ट गर्नुहोस्</string>
+    <string name="invalid_email">अवैध ईमेल। कृपया एक मान्य ईमेल प्रविष्ट गर्नुहोस्।</string>
+    <string name="invalid_mobile">अवैध फोन नम्बर। कृपया वैध फोन नम्बर प्रविष्ट गर्नुहोस्।</string>
+    <string name="invalid_password">अवैध Password.Password लम्बाइ 6 वा भन्दा 6 ठूलो हुनुपर्दछ</string>
+
+    <string name="navigation_drawer_open">नेभिगेसन ड्रयर खोल्नुहोस् </string>
+    <string name="navigation_drawer_close">नेभिगेसन ड्रयर बन्द गर्नुहोस्</string>
+    <!--Drawr Text-->
+    <string name="home">घर</string>
+    <string name="blog">ब्लग</string>
+    <string name="course">कोर्स</string>
+    <string name="bundle">बन्डल</string>
+    <string name="myPurchase">मेरो खरीद</string>
+    <string name="forums">फोरम</string>
+    <string name="contactUs">सम्पर्क</string>
+    <string name="about">हाम्रोबारे</string>
+    <string name="login">लग - इन</string>
+    <string name="feedback">प्रतिक्रिया</string>
+    <string name="certificate">प्रमाणपत्र</string>
+    <string name="language">भाषा</string>
+    <string name="faq">प्रश्न</string>
+
+    <!--Home Text-->
+    <string name="latest">पछिल्लो</string>
+    <string name="news">समाचार</string>
+    <string name="trending">ट्रेंडिंग</string>
+    <string name="courses">कोर्सहरू</string>
+    <string name="bundles">बन्डलहरू</string>
+    <string name="faqs">प्रश्नहरू</string>
+    <string name="featured">फिचर गरिएको</string>
+    <string name="teacher">शिक्षकहरू</string>
+    <string name="testimonial">प्रशंसापत्र</string>
+    <string name="question">प्रश्न</string>
+    <string name="our">हाम्रो</string>
+    <string name="asked">सोधे</string>
+    <string name="browse">ब्राउज गर्नुहोस्</string>
+    <string name="why">किन</string>
+    <string name="contect">सम्पर्क</string>
+    <string name="us">हामी</string>
+    <string name="sponser">प्रायोजकहरू</string>
+    <string name="searchtext">आज तपाई के पढ्न चाहानुहुन्छ टाइप गर्नुहोस्?</string>
+    <string name="sortby">द्वारा क्रमबद्ध गर्नुहोस्</string>
+    <string name="chat">कुराकानी</string>
+
+
+    <!--Faq -->
+    <string name="findyour">तपाइँको खोज्नुहोस् </string>
+    <string name="queans">أप्रश्न र उत्तर</string>
+
+    <!--Teacher-->
+    <string name="viewDetail">विवरण हेर्नुहोस्</string>
+    <string name="teachers">शिक्षक</string>
+    <string name="aboutTeacher">बारेमा</string>
+    <string name="specialist">विशेषज्ञ</string>
+
+
+    <!--Blog-->
+    <string name="previousPost">अघिल्लो पोष्ट</string>
+    <string name="nextPost">अर्को पोष्ट</string>
+    <string name="coursetimeline">कोर्स समयरेखा: </string>
+    <string name="lessiontimeline">पाठ समयरेखा: </string>
+
+
+    <!--shop and cart-->
+    <string name="addtocart">कार्टमा थप्नुहोस्</string>
+    <string name="addedtocart">कार्टमा थपियो</string>
+    <string name="shop">पसल</string>
+    <string name="cart">कार्ट</string>
+
+    <!--Message-->
+    <string name="message">सन्देश</string>
+    <string name="searchUser">खोज प्रयोगकर्ता</string>
+    <string name="invoice">चलानी</string>
+    <string name="all">सबै</string>
+    <string name="ourstanding">आउटस्ट्यान्डि</string>
+    <string name="paid">भुक्तानी</string>
+
+    <!--Account-->
+    <string name="myaccount">मेरो खाता</string>
+    <string name="myorder">मेरो अर्डरहरू</string>
+    <string name="mydetail">मेरो विवरण</string>
+    <string name="mywishlist">मेरो ईच्छा </string>
+    <string name="price">मूल्य</string>
+    <string name="qty">मात्रा</string>
+    <string name="saveandcont">सुरक्षित र जारी</string>
+
+    <!--checkout-->
+
+    <string name="checkout">चेकआउट</string>
+    <string name="confirmOrder">आदेश पुष्टि गर्नुहोस्</string>
+    <string name="address">ठेगाना</string>
+    <string name="shiping">ढुवानी</string>
+    <string name="payment">भुक्तानी</string>
+
+
+    <string name="search_no_internet_connection">لकुनै इन्टरनेट जडान छैन</string>
+    <string name="somthingwrong">केही गलत कृपया फेरि प्रयास गर्नुहोस्</string>
+    <string name="checkEmail">पासवर्ड रिसेट गर्न कृपया तपाईको इ-मेल जाँच गर्नुहोस्</string>
+    <string name="signcancel">साइन इन रद्द</string>
+
+    <string-array name="courseSort">
+        <item>कुनै पनि होईन</item>
+        <item>लोकप्रिय</item>
+        <item>ट्रेंडिंग</item>
+        <item>फिचर गरिएको</item>
+    </string-array>
+
+
+    <!--Forgot text-->
+    <string name="resetMyPass">पासवर्ड भुल्नु भयो</string>
+    <string name="forgot">Lorem Ipsum केवल \ n प्रिन्टिंग र typsetting उद्योग को डमी पाठ हो।</string>
+    <string name="username">प्रयोगकर्ता नाम </string>
+    <string name="mobiles">मोबाइल</string>
+    <string name="email">ईमेल</string>
+    <string name="resetPass">पासवर्ड रिसेट</string>
+    <string name="subscribe">भर्खरका अद्यावधिकहरूका लागि सदस्यता लिनुहोस्</string>
+    <string name="subscribeNow">अब सदस्यता लिनुहोस्</string>
+    <string name="subscribeNote">हाम्रो न्यूजलेटर को लागी साइन अप गर्नुहोस् र सूचित गर्नुहोस् जब हामी नयाँ लेखहरु नि: शुल्क प्रकाशित गर्छौं!</string>
+
+    <string name="sendMsg">हामीलाई सन्देश पठाउनुहोस्।</string>
+    <string name="yourname">तपाईंको नाम</string>
+    <string name="youremail">तिम्रो इमेल</string>
+    <string name="yourphone">तपाईको फोन</string>
+    <string name="yourmsg">सन्देश</string>
+    <string name="submit">बुझाउनुहोस्</string>
+
+
+    <string name="addComment">कृपया तपाईंको टिप्पणी प्रविष्ट गर्नुहोस्</string>
+    <string name="addEmail">कृपया ईमेल प्रविष्ट गर्नुहोस्</string>
+    <string name="addName">नाम प्रविष्ट गर्नुहोस्</string>
+    <string name="addPhone">कृपया नम्बर प्रविष्ट गर्नुहोस्</string>
+
+    <string name="offer">प्रस्ताव</string>
+    <string name="coupenuse">उपयोग: प्रति प्रयोगकर्ता</string>
+    <string name="minAmount">न्यूनतम अर्डर रकम</string>
+    <string name="enterFname">اकृपया पहिलो नाम प्रविष्ट गर्नुहोस्</string>
+    <string name="enterLname">कृपया अन्तिम नाम प्रविष्ट गर्नुहोस्</string>
+    <string name="enterNumber">कृपया फोन नम्बर प्रविष्ट गर्नुहोस्</string>
+    <string name="signUpSuccess">साइनअप सफलफुल। कृपया पहिले लगईन गर्नुहोस्ا</string>
+    <string name="updateData">अपडेट सफल।</string>
+
+    <string name="logout">बाहिर निस्कनु</string>
+    <string name="addForum">नयाँ छलफल</string>
+    <string name="add">थप्नुहोस्</string>
+    <string name="title">शीर्षक</string>
+    <string name="discussion">नयाँ छलफल थप्नुहोस्</string>
+    <string name="enterTitle">कृपया शीर्षक प्रविष्ट गर्नुहोस्</string>
+    <string name="enterDiscussion">कृपया छलफल प्रविष्ट गर्नुहोस्</string>
+    <string name="addSuccessFul">छलफल थपियो</string>
+    <string name="deletSuccessFul">छलफल मेटाउनुहोस् सफल</string>
+
+    <string name="detail">विस्तार</string>
+    <string name="count">गणना</string>
+    <string name="name">नाम</string>
+    <string name="id">आईडी</string>
+
+    <string name="sub_total">सब कुल</string>
+    <string name="shipping">ढुवानी</string>
+    <string name="totalAmount">कुल</string>
+    <string name="Tax">कर</string>
+    <string name="enterPromo">प्रोमो कोड प्रविष्ट गर्नुहोस्</string>
+    <string name="promoMessage">कृपया प्रोमो कोड प्रविष्ट गर्नुहोस्</string>
+    <string name="promo_code_que">प्रोमो कोड</string>
+    <string name="validCoupon">कृपया मान्य कुपन इनपुट गर्नुहोस्</string>
+    <string name="apply">लागू गर्नुहोस्</string>
+    <string name="profile">प्रोफाइल</string>
+    <string name="offlinepayment">अफलाईन भुक्तान</string>
+    <string name="selectpaymant">भुक्तानी विधि चयन गर्नुहोस्</string>
+    <string name="pleaseByeCourse">कृपया पाठ्यक्रम खरीद गर्नुहोस्</string>
+    <string name="orderDone">अर्डर भयो</string>
+
+    <string name="English">English</string>
+    <string name="spanish">Spanish</string>
+    <string name="french">French</string>
+    <string name="arabic">Arabic</string>
+
+    <string name="download">تحميل</string>
+
+
+</resources>

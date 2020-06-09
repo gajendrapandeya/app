@@ -1,4 +1,4 @@
-<resources xmlns:android="http://schemas.android.com/apk/res/android">
+<resources>
     <string name="app_name">CopyKalam</string>
 
     <!--facebook app id change hear-->
@@ -188,6 +188,7 @@
     <string name="count">count</string>
     <string name="name">name</string>
     <string name="id">id</string>
+
     <string name="sub_total">Sub Total</string>
     <string name="shipping">Shipping</string>
     <string name="totalAmount">Total</string>
@@ -202,10 +203,12 @@
     <string name="selectpaymant">Select Payment Method</string>
     <string name="pleaseByeCourse">Please Buy Course</string>
     <string name="orderDone">Order Done</string>
+
     <string name="English">English</string>
     <string name="spanish">Spanish</string>
     <string name="french">French</string>
     <string name="arabic">Arabic</string>
+    <string name="nepali">Nepali</string>
 
 
     <string name="download">Download</string>
@@ -240,6 +243,7 @@
     <string name="loading">Loading....</string>
     <string name="drawer">Drawer</string>
     <string name="copy_kalam">Copy\n<i>K</i>alam</string>
+    <string name="logos">logos</string>
 
 
 </resources>

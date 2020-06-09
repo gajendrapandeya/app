@@ -1,17 +1,16 @@
 package com.copy.lms.activity;
 
 import android.content.Intent;
-
-import androidx.databinding.DataBindingUtil;
-
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
-
-import androidx.annotation.Nullable;
-import androidx.recyclerview.widget.LinearLayoutManager;
-
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
+
+import androidx.annotation.Nullable;
+import androidx.core.content.ContextCompat;
+import androidx.databinding.DataBindingUtil;
+import androidx.recyclerview.widget.LinearLayoutManager;
 
 import com.copy.lms.BaseAppClass;
 import com.copy.lms.R;
@@ -69,15 +68,16 @@ public class CartListActivity extends BaseActivity implements View.OnClickListen
 
     @Override
     public void setToolBar() {
+
+
         if (binding.included.toolbar != null) {
             binding.included.txtTitle.setText(getString(R.string.cart));
-
             binding.included.toolbar.setVisibility(View.VISIBLE);
             setSupportActionBar(binding.included.toolbar);
+            binding.included.toolbar.setBackground(new ColorDrawable(ContextCompat.getColor(this, R.color.toolbar_color)));
             binding.included.imgBack.setVisibility(View.VISIBLE);
             binding.included.imgSearch.setVisibility(View.GONE);
             binding.included.imgBack.setOnClickListener(this);
-
         }
     }
 
@@ -222,7 +222,7 @@ public class CartListActivity extends BaseActivity implements View.OnClickListen
             public void onSuccess(String response) {
                 try {
                     dialog.hide();
-                    JSONObject jsonObject = new JSONObject(response.toString());
+                    JSONObject jsonObject = new JSONObject(response);
                     total =jsonObject.getString("final_total");
                     JSONObject taxObject =jsonObject.getJSONObject("tax_data");
                     fillArrayList(true, jsonObject.getString("subtotal"), jsonObject.getString("final_total")

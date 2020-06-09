@@ -376,7 +376,7 @@
                     android:background="@drawable/btn_gradient_style"
                     android:gravity="center"
                     android:text="@string/signUp"
-                    android:textAllCaps="true"
+                    android:textAllCaps="false"
                     android:padding="@dimen/_6sdp"
                     android:textColor="@color/white"
                     android:textSize="@dimen/_15sdp"

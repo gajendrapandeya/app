@@ -5,6 +5,10 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 
+import androidx.annotation.Nullable;
+import androidx.databinding.DataBindingUtil;
+import androidx.recyclerview.widget.LinearLayoutManager;
+
 import com.copy.lms.BaseAppClass;
 import com.copy.lms.R;
 import com.copy.lms.adapter.LanguageListAdapter;
@@ -17,10 +21,7 @@ import com.copy.lms.util.AppConstant;
 import com.copy.lms.util.Constants;
 
 import java.util.ArrayList;
-
-import androidx.annotation.Nullable;
-import androidx.databinding.DataBindingUtil;
-import androidx.recyclerview.widget.LinearLayoutManager;
+import java.util.Objects;
 
 public class LanguageListActivity extends BaseActivity implements View.OnClickListener {
 
@@ -92,6 +93,8 @@ public class LanguageListActivity extends BaseActivity implements View.OnClickLi
                     BaseAppClass.getPreferences().saveUserLanguageCode(Constants.FRANCH);
                 else if (position == 3)
                     BaseAppClass.getPreferences().saveUserLanguageCode(Constants.AREBIC);
+//                else if(position == 4)
+//                    BaseAppClass.getPreferences().saveUserLanguageCode(Constants.NEPALI);
 
                 BaseAppClass.changeLang(LanguageListActivity.this, BaseAppClass.getPreferences().getUserLanguageCode());
                 setResult();
@@ -119,7 +122,7 @@ public class LanguageListActivity extends BaseActivity implements View.OnClickLi
         LanguageModel itemModel;
 
         String[] languageName = {getString(R.string.English), getString(R.string.spanish), getString(R.string.french),
-                getString(R.string.arabic)};
+                getString(R.string.arabic), "Nepali"};
 
         int[] languageId = {Constants.ENGLISH, Constants.SPANISH, Constants.FRANCH,
                 Constants.AREBIC};
@@ -129,12 +132,12 @@ public class LanguageListActivity extends BaseActivity implements View.OnClickLi
             itemModel = new LanguageModel();
             itemModel.setCode(languageId[i]);
             itemModel.setName(languageName[i]);
-            itemModel.setIsselected(BaseAppClass.getPreferences().getUserLanguageCode() == languageId[i] ? true : false);
+            itemModel.setIsselected(BaseAppClass.getPreferences().getUserLanguageCode() == languageId[i]);
             model.getArrayList().add(itemModel);
 
 
         }
-        binding.recyclerView.getAdapter().notifyDataSetChanged();
+        Objects.requireNonNull(binding.recyclerView.getAdapter()).notifyDataSetChanged();
         notyFyDat();
 
     }

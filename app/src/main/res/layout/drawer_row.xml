@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <layout xmlns:tools="http://schemas.android.com/tools"
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
     <data>
 
@@ -34,9 +33,10 @@
                 android:layout_width="@dimen/_16sdp"
                 android:layout_height="@dimen/_16sdp"
                 android:layout_gravity="center_vertical"
-                android:tint="@color/white"
-                android:backgroundTint="@color/white"
+                android:backgroundTint="@color/black"
+                android:contentDescription="@string/logos"
                 android:src="@drawable/app_icon"
+                android:tint="@android:color/black"
                 tools:ignore="UnusedAttribute" />
 
             <TextView
@@ -44,15 +44,16 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
-                android:layout_marginStart="@dimen/_8sdp"
-                android:textColor="@color/white"
-                android:textSize="@dimen/_16sdp"/>
+                android:layout_marginStart="@dimen/_10sdp"
+                android:fontFamily="@font/asul"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_16sdp" />
 
         </LinearLayout>
         <View
             android:layout_width="match_parent"
             android:layout_height="0.5dp"
-            android:background="@color/black"/>
+            android:background="@android:color/black" />
 
 
     </LinearLayout>

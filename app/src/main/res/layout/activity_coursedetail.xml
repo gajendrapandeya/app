@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
 
     <data>
 
@@ -153,9 +154,10 @@
                     <androidx.recyclerview.widget.RecyclerView
                         android:id="@+id/recyclerView"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_height="0dp"
                         android:layout_weight="1"
-                        android:nestedScrollingEnabled="false" />
+                        android:nestedScrollingEnabled="false"
+                        tools:ignore="UnusedAttribute" />
 
                 </LinearLayout>
 

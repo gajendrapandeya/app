@@ -13,11 +13,12 @@
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
+            android:layout_height="@dimen/_48sdp"
             android:layout_margin="0dp"
             android:contentInsetLeft="0dp"
             android:contentInsetStart="0dp"
             android:elevation="0dp"
+            android:background="@color/toolbar_color"
             android:gravity="center|center_vertical"
             android:layout_gravity="center|center_vertical"
             android:minHeight="?attr/actionBarSize"

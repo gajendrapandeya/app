@@ -1,14 +1,12 @@
 package com.copy.lms.adapter;
 
 import android.content.Context;
-
-import androidx.databinding.DataBindingUtil;
-import androidx.recyclerview.widget.RecyclerView;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import androidx.databinding.DataBindingUtil;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.copy.lms.BaseAppClass;
 import com.copy.lms.R;
@@ -194,6 +192,10 @@ public class DrawerAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
                 case R.id.txtArebic:
                     itemClick.onClick(getAdapterPosition(), Constants.CLICK_AREBIC);
                     break;
+//
+//                case R.id.txtNepali:
+//                    itemClick.onClick(getAdapterPosition(), Constants.CLICK_NEPALI);
+//                    break;
             }
         }
     }

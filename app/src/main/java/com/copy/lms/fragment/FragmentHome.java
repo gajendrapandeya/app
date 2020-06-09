@@ -1,24 +1,21 @@
 package com.copy.lms.fragment;
 
 import android.content.Intent;
-
-import androidx.databinding.DataBindingUtil;
-
 import android.os.Bundle;
-
-import androidx.annotation.Nullable;
-import androidx.recyclerview.widget.GridLayoutManager;
-import androidx.appcompat.widget.SearchView;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import androidx.annotation.Nullable;
+import androidx.appcompat.widget.SearchView;
+import androidx.databinding.DataBindingUtil;
+import androidx.recyclerview.widget.GridLayoutManager;
 
-import com.copy.lms.Config;
+import com.copy.lms.BaseAppClass;
 import com.copy.lms.R;
 import com.copy.lms.activity.AboutUsActivity;
 import com.copy.lms.activity.BundleListActivity;
+import com.copy.lms.activity.CartListActivity;
 import com.copy.lms.activity.CheckoutActivity;
 import com.copy.lms.activity.ContactUsActivity;
 import com.copy.lms.activity.CourseListActivity;
@@ -37,9 +34,9 @@ import com.copy.lms.model.HomeListModel;
 import com.copy.lms.model.HomeModel;
 import com.copy.lms.util.AppConstant;
 import com.copy.lms.util.Constants;
-import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
+import java.util.Objects;
 
 public class FragmentHome extends BaseFragment implements View.OnClickListener {
     public static final String TAG = "Shop";
@@ -84,6 +81,20 @@ public class FragmentHome extends BaseFragment implements View.OnClickListener {
                 return false;
             }
         });
+
+        //new code for username and cart icon
+        assert binding.userName != null;
+        binding.userName.setText(BaseAppClass.getPreferences().getUserName());
+        Objects.requireNonNull(binding.recyclerView.getAdapter()).notifyDataSetChanged();
+
+        assert binding.myCart != null;
+        binding.myCart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                startActivity(new Intent(getActivity(), CartListActivity.class));
+            }
+        });
     }
 
 
@@ -95,8 +106,6 @@ public class FragmentHome extends BaseFragment implements View.OnClickListener {
         getActivity().overridePendingTransition(R.anim.animation, R.anim.animation2);
 
     }
-
-    ;
 
 
     @Override
@@ -274,7 +283,7 @@ public class FragmentHome extends BaseFragment implements View.OnClickListener {
             model.getArrayList().add(itemModel);
 
         }
-        binding.recyclerView.getAdapter().notifyDataSetChanged();
+        Objects.requireNonNull(binding.recyclerView.getAdapter()).notifyDataSetChanged();
     }
 
 
