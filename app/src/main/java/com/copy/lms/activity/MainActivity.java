@@ -3,8 +3,10 @@ package com.copy.lms.activity;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 
+import androidx.core.content.ContextCompat;
 import androidx.databinding.DataBindingUtil;
 
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -23,6 +25,7 @@ import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 
+import com.etebarian.meowbottomnavigation.MeowBottomNavigation;
 import com.facebook.login.LoginManager;
 import com.google.android.gms.auth.api.Auth;
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
@@ -53,6 +56,8 @@ import com.twitter.sdk.android.core.TwitterCore;
 
 import java.util.ArrayList;
 
+import kotlin.Unit;
+import kotlin.jvm.functions.Function1;
 import retrofit.RetrofitError;
 import retrofit.client.Response;
 
@@ -80,6 +85,37 @@ public class MainActivity extends BaseActivity implements MainActivityModel.Bott
         isOpened = true;
 
 
+        MeowBottomNavigation bottomNavigation = findViewById(R.id.bottomNavigation);
+        bottomNavigation.add(new MeowBottomNavigation.Model(1, R.drawable.ic_books));
+        bottomNavigation.add(new MeowBottomNavigation.Model(2, R.drawable.ic_home));
+        bottomNavigation.add(new MeowBottomNavigation.Model(3, R.drawable.ic_purchases));
+
+        bottomNavigation.setOnClickMenuListener(new Function1<MeowBottomNavigation.Model, Unit>() {
+            @Override
+            public Unit invoke(MeowBottomNavigation.Model model) {
+                switch (model.getIcon()) {
+                    case R.drawable.ic_books:
+                        startActivity(new Intent(MainActivity.this, CourseListActivity.class)
+                                .putExtra(CourseListActivity.VALUE, "none"));
+                        break;
+
+                    case R.drawable.ic_purchases:
+                        startActivity(new Intent(MainActivity.this, MyPurchaseListActivity.class));
+                        break;
+                }
+                return null;
+            }
+        });
+
+        bottomNavigation.setOnShowListener(new Function1<MeowBottomNavigation.Model, Unit>() {
+            @Override
+            public Unit invoke(MeowBottomNavigation.Model model) {
+                // YOUR CODES
+                return null;
+            }
+        });
+
+        bottomNavigation.show(2, true);
     }
 
     @Override
@@ -157,6 +193,7 @@ public class MainActivity extends BaseActivity implements MainActivityModel.Bott
     @Override
     public void setToolBar() {
         setSupportActionBar(binding.included.toolbar);
+        binding.included.toolbar.setBackground(new ColorDrawable(ContextCompat.getColor(this, R.color.toolbar_color)));
         binding.included.imgLock.setVisibility(View.VISIBLE);
 
     }

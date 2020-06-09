@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <array name="preloaded_fonts" translatable="false">
+        <item>@font/alef</item>
         <item>@font/alike</item>
+        <item>@font/amiri_italic</item>
         <item>@font/aref_ruqaa_bold</item>
+        <item>@font/bitter</item>
+        <item>@font/jura</item>
         <item>@font/muli_black</item>
         <item>@font/muli_light</item>
+        <item>@font/sumana</item>
+        <item>@font/tinos</item>
+        <item>@font/vollkorn_italic</item>
     </array>
 </resources>

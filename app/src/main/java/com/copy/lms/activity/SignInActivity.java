@@ -1,5 +1,6 @@
 package com.copy.lms.activity;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
 
 import androidx.databinding.DataBindingUtil;
@@ -14,11 +15,13 @@ import android.util.Log;
 import android.view.KeyEvent;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.WindowManager;
 import android.view.inputmethod.EditorInfo;
 import android.widget.TextView;
 import android.widget.Toast;
 
 
+import com.copy.lms.CustomDialog;
 import com.facebook.AccessToken;
 import com.facebook.CallbackManager;
 import com.facebook.FacebookCallback;
@@ -55,6 +58,7 @@ import com.twitter.sdk.android.core.TwitterSession;
 import com.twitter.sdk.android.core.identity.TwitterAuthClient;
 
 import java.util.Arrays;
+import java.util.Objects;
 
 import retrofit.RetrofitError;
 import retrofit.client.Response;
@@ -68,6 +72,9 @@ public class SignInActivity extends BaseActivity implements SignInModel.BtnClick
     private static final int RC_SIGN_IN = 1;
 
     private static SignInActivity instance;
+
+    //AlertDialog
+    private CustomDialog customDialog;
 
     public static SignInActivity getInstance() {
         return instance;
@@ -99,8 +106,12 @@ public class SignInActivity extends BaseActivity implements SignInModel.BtnClick
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         instance = this;
 
+
+        //AlertDialog
+        customDialog = new CustomDialog(this);
 
     }
 
@@ -146,6 +157,7 @@ public class SignInActivity extends BaseActivity implements SignInModel.BtnClick
                 return false;
             }
         });
+
         binding.btnSignin.setOnClickListener(this);
         binding.showPassword.setOnClickListener(this);
         binding.btnSignUp.setOnClickListener(this);
@@ -270,7 +282,6 @@ public class SignInActivity extends BaseActivity implements SignInModel.BtnClick
     private boolean validateInput() {
         if (!Validation.isStringEmpty(binding.etEmailorMobile.getText().toString())) {
             if (Utility.validate(binding.etEmailorMobile.getText().toString())) {
-
                 if (!Validation.isStringEmpty(binding.etPassword.getText().toString())) {
                     return true;
                 } else
@@ -324,6 +335,7 @@ public class SignInActivity extends BaseActivity implements SignInModel.BtnClick
     private void gotSignUp() {
         Intent intent = new Intent(SignInActivity.this, SignUpActivity.class);
         startActivity(intent);
+        overridePendingTransition(R.anim.animation, R.anim.animation2);
     }
 
     @Override
@@ -369,7 +381,8 @@ public class SignInActivity extends BaseActivity implements SignInModel.BtnClick
     //     Login Api Codeall
     public void loginApi() {
         dialog.setCancelable(false);
-        dialog.show();
+      //  dialog.show();
+        customDialog.startLoading();
         if (AppConstant.isOnline(this)) {
             RetrofitClient.getInstance().getRestOkClient().
                     passwordLogin("password",
@@ -381,6 +394,7 @@ public class SignInActivity extends BaseActivity implements SignInModel.BtnClick
                             callback);
         } else {
             dialog.hide();
+            customDialog.dissmissDialog();
             Toast.makeText(this, getString(R.string.search_no_internet_connection), Toast.LENGTH_SHORT).show();
 
         }
@@ -389,6 +403,7 @@ public class SignInActivity extends BaseActivity implements SignInModel.BtnClick
     //     Login Api Codeall
     public void socialLogin(String provider, String token) {
         dialog.setCancelable(false);
+        customDialog.startLoading();
         dialog.show();
         if (AppConstant.isOnline(this)) {
             RetrofitClient.getInstance().getRestOkClient().
@@ -402,6 +417,7 @@ public class SignInActivity extends BaseActivity implements SignInModel.BtnClick
                             callback);
         } else {
             dialog.hide();
+            customDialog.dissmissDialog();
             Toast.makeText(this, getString(R.string.search_no_internet_connection), Toast.LENGTH_SHORT).show();
 
         }
@@ -409,6 +425,7 @@ public class SignInActivity extends BaseActivity implements SignInModel.BtnClick
 
     public void twitterLogin(String provider, String token, String secret) {
         dialog.setCancelable(false);
+        customDialog.startLoading();
         dialog.show();
         if (AppConstant.isOnline(this)) {
             RetrofitClient.getInstance().getRestOkClient().
@@ -423,6 +440,7 @@ public class SignInActivity extends BaseActivity implements SignInModel.BtnClick
                             callback);
         } else {
             dialog.hide();
+            customDialog.dissmissDialog();
             Toast.makeText(this, getString(R.string.search_no_internet_connection), Toast.LENGTH_SHORT).show();
 
         }
@@ -432,6 +450,7 @@ public class SignInActivity extends BaseActivity implements SignInModel.BtnClick
         @Override
         public void success(Object object, Response response) {
             dialog.hide();
+            customDialog.dissmissDialog();
             TokenModel tokenModel = (TokenModel) object;
             if (tokenModel != null) {
                 BaseAppClass.getPreferences().saveToken(tokenModel.getAccess_token());
@@ -447,6 +466,7 @@ public class SignInActivity extends BaseActivity implements SignInModel.BtnClick
         @Override
         public void failure(RetrofitError error) {
             dialog.hide();
+            customDialog.dissmissDialog();
             Toast.makeText(SignInActivity.this, error.getMessage(), Toast.LENGTH_SHORT).show();
 
         }
@@ -457,12 +477,14 @@ public class SignInActivity extends BaseActivity implements SignInModel.BtnClick
     public void forgotApi() {
         dialog.setCancelable(false);
         dialog.show();
+        customDialog.startLoading();
         if (AppConstant.isOnline(this)) {
             RetrofitClient.getInstance().getRestOkClient().
                     forgotPassword(binding.etEmailorMobile.getText().toString(),
                             forgotcallback);
         } else {
             dialog.hide();
+            customDialog.dissmissDialog();
             Toast.makeText(this, getString(R.string.search_no_internet_connection), Toast.LENGTH_SHORT).show();
 
         }
@@ -472,6 +494,7 @@ public class SignInActivity extends BaseActivity implements SignInModel.BtnClick
         @Override
         public void success(Object object, Response response) {
             dialog.hide();
+            customDialog.dissmissDialog();
             NetForgot netForgot = (NetForgot) object;
             if (netForgot != null) {
                 Toast.makeText(SignInActivity.this, getString(R.string.checkEmail), Toast.LENGTH_SHORT).show();
@@ -485,6 +508,7 @@ public class SignInActivity extends BaseActivity implements SignInModel.BtnClick
         @Override
         public void failure(RetrofitError error) {
             dialog.hide();
+            customDialog.dissmissDialog();
             Toast.makeText(SignInActivity.this, error.getMessage(), Toast.LENGTH_SHORT).show();
 
         }

@@ -120,14 +120,16 @@ public class onBoardingActivity extends AppCompatActivity {
 
     public void skipFunction(View view) {
 
-        startActivity(new Intent(onBoardingActivity.this, LoginActivity.class));
+        startActivity(new Intent(onBoardingActivity.this, SignInActivity.class));
         finish();
+        overridePendingTransition(R.anim.animation, R.anim.animation2);
     }
 
     public void next(View view) {
 
         viewPager.setCurrentItem(currentPosition+1);
-        startActivity(new Intent(onBoardingActivity.this, LoginActivity.class));
+        startActivity(new Intent(onBoardingActivity.this, SignInActivity.class));
         finish();
+        overridePendingTransition(R.anim.animation, R.anim.animation2);
     }
 }

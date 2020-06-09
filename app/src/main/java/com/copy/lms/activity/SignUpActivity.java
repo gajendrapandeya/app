@@ -6,9 +6,11 @@ import androidx.databinding.DataBindingUtil;
 
 import android.os.Bundle;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.Toast;
 
 import com.copy.lms.BaseAppClass;
+import com.copy.lms.CustomDialog;
 import com.copy.lms.R;
 import com.copy.lms.ResponceModel.NetSignUpData;
 import com.copy.lms.ResponceModel.NetSuccess;
@@ -29,11 +31,19 @@ public class SignUpActivity extends BaseActivity implements View.OnClickListener
     private AccountDetailModel model;
     private ActivitySignupBinding binding;
 
+    //AlertDialog
+    private CustomDialog customDialog;
+
     CustomProgressDialog dialog;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
+        //AlertDialog
+        customDialog = new CustomDialog(this);
+
 
     }
 
@@ -51,8 +61,8 @@ public class SignUpActivity extends BaseActivity implements View.OnClickListener
 
     @Override
     public void setToolBar() {
-        binding.included.txtTitle.setText(getString(R.string.signUp));
-        binding.included.imgBack.setOnClickListener(this);
+//        binding.included.txtTitle.setText(getString(R.string.signUp));
+//        binding.included.imgBack.setOnClickListener(this);
 
     }
 
@@ -61,6 +71,7 @@ public class SignUpActivity extends BaseActivity implements View.OnClickListener
         dialog = new CustomProgressDialog(Constants.PROGRESS_IMAGE, SignUpActivity.this).createProgressBar();
 
         binding.btnSignUp.setOnClickListener(this);
+        binding.btnSignIn.setOnClickListener(this);
 
     }
 
@@ -122,7 +133,7 @@ public class SignUpActivity extends BaseActivity implements View.OnClickListener
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.imgBack:
+            case R.id.btnSignIn:
                 closeActivity();
                 break;
 
@@ -143,6 +154,7 @@ public class SignUpActivity extends BaseActivity implements View.OnClickListener
     //     Login Api Codeall
     public void signUpAPi() {
         dialog.setCancelable(false);
+        customDialog.startLoading();
         dialog.show();
         if (AppConstant.isOnline(this)) {
             RetrofitClient.getInstance().getRestOkClient().
@@ -162,6 +174,7 @@ public class SignUpActivity extends BaseActivity implements View.OnClickListener
                             signUpcallback);
         } else {
             dialog.hide();
+            customDialog.dissmissDialog();
             Toast.makeText(this, getString(R.string.search_no_internet_connection), Toast.LENGTH_SHORT).show();
 
         }
@@ -171,6 +184,7 @@ public class SignUpActivity extends BaseActivity implements View.OnClickListener
         @Override
         public void success(Object object, Response response) {
             dialog.hide();
+            customDialog.dissmissDialog();
             NetSuccess NetSuccess = (NetSuccess) object;
             if (NetSuccess != null) {
 
@@ -190,6 +204,7 @@ public class SignUpActivity extends BaseActivity implements View.OnClickListener
         @Override
         public void failure(RetrofitError error) {
             dialog.hide();
+            customDialog.dissmissDialog();
             Toast.makeText(SignUpActivity.this, error.getMessage(), Toast.LENGTH_SHORT).show();
 
         }
