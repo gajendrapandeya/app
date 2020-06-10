@@ -112,14 +112,14 @@ public class BaseAppClass extends Application {
         String languageCode = null;
         if (lang == Constants.ENGLISH)
             languageCode = "en";
-        else if (lang == Constants.AREBIC)
-            languageCode = "ar";
-        else if (lang == Constants.SPANISH)
-            languageCode = "es";
-        else if (lang == Constants.FRANCH)
-            languageCode = "fr";
-//        else if(lang == Constants.NEPALI)
-//            languageCode = "ne";
+//        else if (lang == Constants.AREBIC)
+//            languageCode = "ar";
+//        else if (lang == Constants.SPANISH)
+//            languageCode = "es";
+//        else if (lang == Constants.FRANCH)
+//            languageCode = "fr";
+        else if (lang == Constants.NEPALI)
+            languageCode = "ne";
 
         return languageCode;
 

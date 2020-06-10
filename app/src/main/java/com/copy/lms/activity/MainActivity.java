@@ -332,12 +332,14 @@ public class MainActivity extends BaseActivity implements MainActivityModel.Bott
             case Constants.LANGUAGE:
                 if (type == Constants.CLICK_ENGLISH)
                     BaseAppClass.getPreferences().saveUserLanguageCode(Constants.ENGLISH);
-                else if (type == Constants.CLICK_SPANISH)
-                    BaseAppClass.getPreferences().saveUserLanguageCode(Constants.SPANISH);
-                else if (type == Constants.CLICK_FRANCH)
-                    BaseAppClass.getPreferences().saveUserLanguageCode(Constants.FRANCH);
-                else if (type == Constants.CLICK_AREBIC)
-                    BaseAppClass.getPreferences().saveUserLanguageCode(Constants.AREBIC);
+//                else if (type == Constants.CLICK_SPANISH)
+//                    BaseAppClass.getPreferences().saveUserLanguageCode(Constants.SPANISH);
+//                else if (type == Constants.CLICK_FRANCH)
+//                    BaseAppClass.getPreferences().saveUserLanguageCode(Constants.FRANCH);
+//                else if (type == Constants.CLICK_AREBIC)
+//                    BaseAppClass.getPreferences().saveUserLanguageCode(Constants.AREBIC);
+                else if (type == Constants.CLICK_NEPALI)
+                    BaseAppClass.getPreferences().saveUserLanguageCode(Constants.NEPALI);
 
                 BaseAppClass.changeLang(MainActivity.this, BaseAppClass.getPreferences().getUserLanguageCode());
                 recreate();

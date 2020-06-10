@@ -87,12 +87,12 @@ public class LanguageListActivity extends BaseActivity implements View.OnClickLi
             public void onClick(int position, int type) {
                 if (position == 0)
                     BaseAppClass.getPreferences().saveUserLanguageCode(Constants.ENGLISH);
-                else if (position == 1)
-                    BaseAppClass.getPreferences().saveUserLanguageCode(Constants.SPANISH);
-                else if (position == 2)
-                    BaseAppClass.getPreferences().saveUserLanguageCode(Constants.FRANCH);
-                else if (position == 3)
-                    BaseAppClass.getPreferences().saveUserLanguageCode(Constants.AREBIC);
+//                else if (position == 1)
+//                    BaseAppClass.getPreferences().saveUserLanguageCode(Constants.SPANISH);
+//                else if (position == 2)
+//                    BaseAppClass.getPreferences().saveUserLanguageCode(Constants.FRANCH);
+//                else if (position == 3)
+//                    BaseAppClass.getPreferences().saveUserLanguageCode(Constants.AREBIC);
 //                else if(position == 4)
 //                    BaseAppClass.getPreferences().saveUserLanguageCode(Constants.NEPALI);
 
@@ -121,14 +121,12 @@ public class LanguageListActivity extends BaseActivity implements View.OnClickLi
 
         LanguageModel itemModel;
 
-        String[] languageName = {getString(R.string.English), getString(R.string.spanish), getString(R.string.french),
-                getString(R.string.arabic), "Nepali"};
+        String[] languageName = {getString(R.string.English), getString(R.string.nepali)};
 
-        int[] languageId = {Constants.ENGLISH, Constants.SPANISH, Constants.FRANCH,
-                Constants.AREBIC};
+        int[] languageId = {Constants.ENGLISH, Constants.NEPALI};
 
 
-        for (int i = 0; i < 4; i++) {
+        for (int i = 0; i < 2; i++) {
             itemModel = new LanguageModel();
             itemModel.setCode(languageId[i]);
             itemModel.setName(languageName[i]);

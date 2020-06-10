@@ -183,19 +183,19 @@ public class DrawerAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
                 case R.id.txtEnglish:
                     itemClick.onClick(getAdapterPosition(), Constants.CLICK_ENGLISH);
                     break;
-                case R.id.txtSpanish:
-                    itemClick.onClick(getAdapterPosition(), Constants.CLICK_SPANISH);
-                    break;
-                case R.id.txtfrench:
-                    itemClick.onClick(getAdapterPosition(), Constants.CLICK_FRANCH);
-                    break;
-                case R.id.txtArebic:
-                    itemClick.onClick(getAdapterPosition(), Constants.CLICK_AREBIC);
-                    break;
-//
-//                case R.id.txtNepali:
-//                    itemClick.onClick(getAdapterPosition(), Constants.CLICK_NEPALI);
+//                case R.id.txtSpanish:
+//                    itemClick.onClick(getAdapterPosition(), Constants.CLICK_SPANISH);
 //                    break;
+//                case R.id.txtfrench:
+//                    itemClick.onClick(getAdapterPosition(), Constants.CLICK_FRANCH);
+//                    break;
+//                case R.id.txtArebic:
+//                    itemClick.onClick(getAdapterPosition(), Constants.CLICK_AREBIC);
+//                    break;
+
+                case R.id.txtNepali:
+                    itemClick.onClick(getAdapterPosition(), Constants.CLICK_NEPALI);
+                    break;
             }
         }
     }

@@ -22,12 +22,12 @@ public class Constants {
     public static final int BACK = 4;
     public static final int APPLY = 5;
     public static final int CLICK_ENGLISH = 6;
-    public static final int CLICK_SPANISH = 7;
-    public static final int CLICK_FRANCH = 8;
-    public static final int CLICK_AREBIC = 9;
+    //    public static final int CLICK_SPANISH = 7;
+//    public static final int CLICK_FRANCH = 8;
+//    public static final int CLICK_AREBIC = 9;
     public static final int CLICK_TEST = 10;
     public static final int CLICK_RETEST = 11;
-    //   public static final int CLICK_NEPALI = 12;
+    public static final int CLICK_NEPALI = 12;
 
 
     public static final int LANGUAGE_REQUEST_CODE = 0x1;
@@ -69,10 +69,10 @@ public class Constants {
 
 
     public static final int ENGLISH = 1;
-    public static final int AREBIC = 2;
-    public static final int SPANISH = 3;
-    public static final int FRANCH = 4;
-//    public static final int NEPALI = 5;
+    //    public static final int AREBIC = 2;
+//    public static final int SPANISH = 3;
+//    public static final int FRANCH = 4;
+    public static final int NEPALI = 2;
 
 
     //Notification
